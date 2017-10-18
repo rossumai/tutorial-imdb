@@ -59,7 +59,7 @@ _"Bag-of-words" Representation_
 **One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
 
 ```
-[0,     0,          1,   0,   0]
+[1,     1,          0,   0,   0]
 amazing complicated hope crap sucked
 ```
 
@@ -202,4 +202,4 @@ The simplest models are often good enough.
 
 <br>
 
-Petr Baudis ` <petr@rossum.ai>`
+Petr Baudis &nbsp;`  <petr@rossum.ai>`
