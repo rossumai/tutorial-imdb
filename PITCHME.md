@@ -41,21 +41,27 @@ How to encode text input mathematically?
 
 #### Can we guess the sentiment<br>based on isolated words?
 
+<br>
+
 this is one **amazing** movie!!!!! you have to realize that chinese folklore is _complicated_ and philosophical.
 
 I _hope_ the makers of this **crap** have day jobs because this film **sucked**!!!
 
-_"Beg-of-words" Representation_
+<br>
+
+_"Bag-of-words" Representation_
 
 ---
 @title[One-hot Encoding]
 
 #### How to represent words mathematically?
 
-**One-hot encoding:** An array as big as the dictionary, all zeroes except a single 1 at the index of the word.
+**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
 
-`[0,     0,          1,   0,   0]`
-`amazing complicated hope crap sucked`
+```
+[0,     0,          1,   0,   0]
+amazing complicated hope crap sucked
+```
 
 To determine sentiment: Multiply each element by the _word weight_ (positive or negative), sum them up.
 
@@ -63,6 +69,8 @@ To determine sentiment: Multiply each element by the _word weight_ (positive or 
 
 ---
 @title[Text to Words]
+
+#### Ok, let's code it!
 
 The first problem in Natural Language Processing: **Tokenization**
 
@@ -177,8 +185,8 @@ Epoch 25/25
 25000/25000 [===] - 3s - acc: 0.9420 - val_acc: 0.8636
 ```
 
-Good story about a backwoods community in the Ozarks around the turn of the century. Moonshine is the leading industry, fighting and funning the major form of entertainment. One day a stranger enters the community and causes a shake-up among the locals. Beautiful scenery adds much to the story.
-*0.86337662*
+Good story about a backwoods community in the Ozarks around the turn of the century. One day a stranger enters the community and causes a shake-up among the locals. Beautiful scenery adds much to the story.
+**0.86337662**
 
 ---
 @title[Take-aways]
@@ -194,4 +202,4 @@ The simplest models are often good enough.
 
 <br>
 
-Petr Baudis `<petr@rossum.ai>`
+Petr Baudis ` <petr@rossum.ai>`
