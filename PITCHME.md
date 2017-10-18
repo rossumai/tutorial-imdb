@@ -17,7 +17,7 @@ https://github.com/rossumai/pyvo17-imdb
 
 ### IMDb Reviews Sentiment
 
-this is one amazing movie!!!!! you have to realize that chinese folklore is complicated and philosophical. i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
+this is one amazing movie!!!!! i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
 
 I hope the makers of this crap have day jobs because this film sucked!!! It looks like someones home movie and I don't think more than $100 was spent making it!!! Total crap!!! Who let's this stuff be released?!?!?!
 
@@ -43,7 +43,7 @@ How to encode text input mathematically?
 
 <br>
 
-this is one **amazing** movie!!!!! you have to realize that chinese folklore is _complicated_ and philosophical.
+this is one **amazing** movie!!!!! i myself did not understand everything but knowing chinese folklore it is very _complicated_.
 
 I _hope_ the makers of this **crap** have day jobs because this film **sucked**!!!
 
@@ -74,7 +74,7 @@ To determine sentiment: Multiply each element by the _word weight_ (positive or 
 
 The first problem in Natural Language Processing: **Tokenization**
 
-this is one amazing movie!!!!! you have to realize that chinese folklore is complicated and philosophical. i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
+this is one amazing movie!!!!! i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
 
 ---
 @title[Text to Words]
@@ -90,7 +90,7 @@ def text_tokens(text):
     return tokens
 ```
 
-this is one amazing movie!!!!! you have to realize that chinese folklore is complicated and philosophical. i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
+this is one amazing movie!!!!! i myself did not understand everything but knowing chinese folklore (i studied them in school)it is very complicated. you just have to take what it gives you.....ENJOY THE MOVIE AND ENJOY THE RIDE....HOORAY!!!!
 
 ---
 @title[Text Encoding]
@@ -118,7 +118,7 @@ def review_bow_vector(tokens):
 **Neural Networks** are just mathematical formulas like the above.
 Only typically more complicated.
 
-**Keras** is a way to put together the complicated formulas
+**Keras** is a framework to put together the formulas
 within a *Model* with *input* and *output* variables.
 
 ```python
