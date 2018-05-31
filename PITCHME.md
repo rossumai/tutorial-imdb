@@ -292,8 +292,17 @@ Way more complicated, _deep_ convolutional neural networks (DCNN).
 ![imagenet](2-Figure1-1.png)
 
 An *ImageNet pre-trained DCNN* - understands basic visual concepts.
+Download one.  (Popular: AlexNet, VGG16, ResNet, InceptionV3.)
 
-(Download one. Populars AlexNet, VGG16, ResNet, InceptionV3.)
+---
+@title[Cheating Pictures]
 
-Either *fine-tune* it, or better just *extract features*
-from the hidden layer, then use the **linear model**.
+#### Let's Cheat Then!
+
+![imagenet](2-Figure1-1.png)
+
+Either *fine-tune* the pre-trained DCNN.
+Or better just *extract features*
+from the last hidden layer, then use the **linear model**.
+
+https://keras.io/applications/
