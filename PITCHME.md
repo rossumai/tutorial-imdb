@@ -58,14 +58,44 @@ _"Bag-of-words" Representation_
 
 **One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
 
+![onehot](1-hot-vector.png)
+
+---
+@title[One-hot Encoding]
+
+#### How to represent words mathematically?
+
+**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
+
+![onehot](1*eUedufAl7_sI_QWSEIstZg.png)
+
+---
+@title[One-hot Encoding]
+
+#### How to represent words mathematically?
+
+**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
+
 ```
 [1,     1,          0,   0,   0]
 amazing complicated hope crap sucked
 ```
 
-To determine sentiment: Multiply each element by the _word weight_ (positive or negative), sum them up.
+---
+@title[One-hot Encoding]
+
+#### How to mathematically determine sentiment?
+
+```
+[1,     1,          0,   0,   0]
+amazing complicated hope crap sucked
+```
+
+Multiply each element by the _word weight_ (positive or negative), sum them up.
 
 `[?,     ?,          ?,   ?,   ?]`
+
+![model](linearmodel.png)
 
 ---
 @title[Text to Words]
