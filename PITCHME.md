@@ -95,7 +95,7 @@ Multiply each element by the _word weight_ (positive or negative), sum them up.
 
 `[?,     ?,          ?,   ?,   ?]`
 
-![model](linearmodel.png)
+Those are the _parameters_ of the neural network.
 
 ---
 @title[Text to Words]
@@ -167,6 +167,21 @@ class SentimentModel(object):
   self.model.fit(X, y, validation_data=(X_val, y_val),
                  epochs=25, verbose=1)
 ```
+
+---
+@title[Linear Model]
+
+#### Linear Model
+
+```python
+  bow = Input(shape=(len(vocab),), name='bow_input')
+  # the actual formula: give weights to all elements and sum once
+  sentiment = Dense(1)(bow)
+  # normalize to [0, 1] range
+  sentiment = Activation('sigmoid')(sentiment)
+```
+
+![model](linearmodel.png)
 
 ---
 @title[Training Keras Model]
