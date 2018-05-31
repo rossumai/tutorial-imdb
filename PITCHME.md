@@ -181,7 +181,7 @@ class SentimentModel(object):
   sentiment = Activation('sigmoid')(sentiment)
 ```
 
-![model](linearmodel.png)
+![model](linearmodel8.png)
 
 ---
 @title[Training Keras Model]
