@@ -142,6 +142,8 @@ def review_bow_vector(tokens):
     return vector
 ```
 
+![onehot](1*eUedufAl7_sI_QWSEIstZg.png)
+
 ---
 @title[Keras Framework]
 
@@ -268,3 +270,30 @@ The simplest models are often good enough.
 Petr Baudis &nbsp;`  <petr@rossum.ai>`
 
 https://github.com/rossumai/pyvo17-imdb
+
+---
+@title[Pictures]
+
+#### ...but what about pictures?
+
+Can we do a yes/no classification on pictures just as easily?  *You promised!*
+
+...
+
+Sorry, but **not without cheating!**
+
+Way more complicated, _deep_ convolutional neural networks (DCNN).
+
+---
+@title[Cheating Pictures]
+
+#### Let's Cheat Then!
+
+![imagenet](2-Figure1-1.png)
+
+An *ImageNet pre-trained DCNN* - understands basic visual concepts.
+
+(Download one. Populars AlexNet, VGG16, ResNet, InceptionV3.)
+
+Either *fine-tune* it, or better just *extract features*
+from the hidden layer, then use the **linear model**.
