@@ -30,11 +30,11 @@ We have labelled examples<br>(_dataset_ - _supervised_ training).
 
 Labels are **yes**/**no** - _categorical_.
 
-**Machine Learning Model:** Propose a mathematical formula that computes the sentiment from input.
+**Machine Learning Model:** Propose a mathematical formula that computes the sentiment from input.<br>
+_How to encode text input mathematically?_
 
-**Machine Learning Training:** Find coefficients in the mathematical formula automatically.
-
-How to encode text input mathematically?
+**Machine Learning Training:** Find coefficients in the mathematical formula automatically.<br>
+Use the _training_ set, keep part of dataset aside.
 
 ---
 @title[Bag-of-Words Representation]
@@ -212,24 +212,44 @@ sentiment.train(X_train, y_train, X_val, y_val)
 ---
 @title[Running This]
 
+### Running This...
+
 ```
 Epoch 1/25
-25000/25000 [===] - 3s - acc: 0.8307 - val_acc: 0.8736
+25000/25000 [======] - 3s - acc: 0.8307 - val_acc: 0.8736
 ...
 Epoch 4/25
-25000/25000 [===] - 3s - acc: 0.9095 - val_acc: 0.8811
+25000/25000 [======] - 3s - acc: 0.9095 - val_acc: 0.8811
 Epoch 5/25
-25000/25000 [===] - 3s - acc: 0.9130 - val_acc: 0.8810
+25000/25000 [======] - 3s - acc: 0.9130 - val_acc: 0.8810
 ...
 Epoch 20/25
-25000/25000 [===] - 3s - acc: 0.9390 - val_acc: 0.8674
+25000/25000 [======] - 3s - acc: 0.9390 - val_acc: 0.8674
 ...
 Epoch 25/25
-25000/25000 [===] - 3s - acc: 0.9420 - val_acc: 0.8636
+25000/25000 [======] - 3s - acc: 0.9420 - val_acc: 0.8636
 ```
+
+Accuracy vs. _validation_ accuracy: **Overfitting**
+
+---
+@title[Running This]
+
+### Predictions
 
 Good story about a backwoods community in the Ozarks around the turn of the century. One day a stranger enters the community and causes a shake-up among the locals. Beautiful scenery adds much to the story.
 **0.86337662**
+
+---
+@title[Explore More]
+
+### MLPrague18 Workshop
+
+Jupyter notebook materials taking this further:
+
+https://github.com/rossumai/mlprague18-nlp
+
+Includes _word embeddings_, convolutional and recurrent neural networks, etc.
 
 ---
 @title[Take-aways]
