@@ -175,9 +175,7 @@ class SentimentModel(object):
 
 ```python
   bow = Input(shape=(len(vocab),), name='bow_input')
-  # the actual formula: give weights to all elements and sum once
   sentiment = Dense(1)(bow)
-  # normalize to [0, 1] range
   sentiment = Activation('sigmoid')(sentiment)
 ```
 
