@@ -4,7 +4,7 @@
 
 <br>
 
-### Machine Learning PyVo 2017
+### PyCon Prague 2018
 
 ### Petr Baudis, Rossum
 
