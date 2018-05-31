@@ -305,4 +305,11 @@ Either *fine-tune* the pre-trained DCNN.
 Or better just *extract features*
 from the last hidden layer, then use the **linear model**.
 
+---
+@title[Cheating Pictures]
+
+#### Let's Cheat Then!
+
+![imagenet](2-Figure1-1.png)
+
 https://keras.io/applications/
