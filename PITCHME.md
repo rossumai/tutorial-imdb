@@ -10,7 +10,7 @@
 
 <br>
 
-https://github.com/rossumai/pyvo17-imdb
+https://github.com/rossumai/tutorial-imdb
 
 ---
 @title[Basic Task]
@@ -269,7 +269,7 @@ The simplest models are often good enough.
 
 Petr Baudis &nbsp;`  <petr@rossum.ai>`
 
-https://github.com/rossumai/pyvo17-imdb
+https://github.com/rossumai/tutorial-imdb
 
 ---
 @title[Pictures]
@@ -338,4 +338,4 @@ For real now. 👋
 
 Petr Baudis &nbsp;`  <petr@rossum.ai>`
 
-https://github.com/rossumai/pyvo17-imdb
+https://github.com/rossumai/tutorial-imdb
