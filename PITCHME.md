@@ -301,9 +301,8 @@ Download one.  (Popular: AlexNet, VGG16, ResNet, InceptionV3.)
 
 ![imagenet structure](deepNetVis_small8.png)
 
-Either *fine-tune* the pre-trained DCNN.
-Or better just *extract features*
-from the last hidden layer, then use the **linear model**.
+Either **fine-tune** the pre-trained DCNN.
+Or better just *cut off the output* and **extract features**.
 
 ---
 @title[Cheating Pictures]
@@ -321,9 +320,9 @@ custom_output = Activation('sigmoid')(custom_output)
 model = Model(inputs=base_model.input, outputs=custom_output)
 ```
 
-(or something just slightly more complicated)
+...or something just slightly more complicated:
 
-<br>
+More layers, non-trainable `base_model`.
 
 https://keras.io/applications/
 
