@@ -173,7 +173,7 @@ class SentimentModel(object):
 ---
 @title[Linear Model]
 
-#### Linear Model
+#### Linear Model (Logistic Regression)
 
 ```python
   bow = Input(shape=(len(vocab),), name='bow_input')
@@ -299,7 +299,7 @@ Download one.  (Popular: AlexNet, VGG16, ResNet, InceptionV3.)
 
 #### Let's Cheat Then!
 
-![imagenet](2-Figure1-1.png)
+![imagenet structure](deepNetVis_small.png)
 
 Either *fine-tune* the pre-trained DCNN.
 Or better just *extract features*
@@ -310,6 +310,26 @@ from the last hidden layer, then use the **linear model**.
 
 #### Let's Cheat Then!
 
-![imagenet](2-Figure1-1.png)
+```python
+base_model = VGG16(weights='imagenet', include_top=False)
+
+custom_output = Dense(1)(base_model.output)
+custom_output = Activation('sigmoid')(custom_output)
+
+model = Model(inputs=base_model.input, outputs=custom_output)
+```
 
 https://keras.io/applications/
+
+---
+@title[Take-aways]
+
+#### Thanks for your attention!
+
+For real now. 👋
+
+<br>
+
+Petr Baudis &nbsp;`  <petr@rossum.ai>`
+
+https://github.com/rossumai/pyvo17-imdb
