@@ -147,7 +147,7 @@ def review_bow_vector(tokens):
 ---
 @title[Keras Framework]
 
-**Neural Networks** are just mathematical formulas like the above.
+**Neural Networks** are just mathematical formulas like the _weighted sum_.
 Only typically more complicated.
 
 **Keras** is a framework to put together the formulas
