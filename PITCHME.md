@@ -310,6 +310,8 @@ from the last hidden layer, then use the **linear model**.
 
 #### Let's Cheat Then!
 
+<br>
+
 ```python
 base_model = VGG16(weights='imagenet', include_top=False)
 
@@ -318,6 +320,10 @@ custom_output = Activation('sigmoid')(custom_output)
 
 model = Model(inputs=base_model.input, outputs=custom_output)
 ```
+
+(or something just slightly more complicated)
+
+<br>
 
 https://keras.io/applications/
 
