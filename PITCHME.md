@@ -63,18 +63,18 @@ _"Bag-of-words" Representation_
 ---
 @title[One-hot Encoding]
 
-#### How to represent words mathematically?
+#### How to represent sentences mathematically?
 
-**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
+**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except ones at the indices of words.
 
 ![onehot](1*eUedufAl7_sI_QWSEIstZg.png)
 
 ---
 @title[One-hot Encoding]
 
-#### How to represent words mathematically?
+#### How to represent sentences mathematically?
 
-**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except a single 1 at the index of the word.
+**One-hot encoding:** An array as big as the dictionary,<br> all zeroes except ones at the indices of words.
 
 ```
 [1,     1,          0,   0,   0]
