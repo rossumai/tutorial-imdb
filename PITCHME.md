@@ -299,7 +299,7 @@ Download one.  (Popular: AlexNet, VGG16, ResNet, InceptionV3.)
 
 #### Let's Cheat Then!
 
-![imagenet structure](deepNetVis_small.png)
+![imagenet structure](deepNetVis_small8.png)
 
 Either *fine-tune* the pre-trained DCNN.
 Or better just *extract features*
